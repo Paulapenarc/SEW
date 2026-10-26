@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026:Ciclista</title>
+
+    <meta name="author" content="Paula Peña" />
+    <meta name="description" content="Documento ciclista del proyecto LaVuelta2026" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+
+    <link href="multimedia/favicon.ico" rel="icon" />
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1>LaVuelta2026</h1>
+        </a>
+
+        <nav>
+            <a href="index.html" title="Inicio de la página">Inicio</a>
+            <a href="ciclista.html" title="Información sobre el ciclista" aria-current="page">Ciclista</a>
+            <a href="equipo.html" title="Información sobre el equipo">Equipo</a>
+            <a href="etapa.html" title="Información sobre la etapa">Etapa</a>
+            <a href="meteorologia.html" title="Información sobre la meteorología">Meteorología</a>
+            <a href="clasificaciones.html" title="Clasificaciones de la etapa">Clasificaciones</a>
+            <a href="juegos.html" title="Juego de preguntas sobre la etapa">Juegos</a>
+            <a href="ayuda.html" title="Ayuda de la página">Ayuda</a>
+        </nav>
+    </header>
+
+    <nav aria-label="migas">
+        <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li>|</li>
+            <li><a href="ciclista.html">Ciclista</a></li>
+        </ol>
+    </nav>
+
+
+
+    <main>
+        <h2>Iván Ramiro Sosa</h2>
+
+        <section>
+            <h3>Datos personales</h3>
+            <ul>
+                <li>Iván Ramiro Sosa</li>
+                <li>31/10/1997</li>
+                <li>Colombia</li>
+                <li>Kern Pharma</li>
+                <li>226</li>
+            </ul>
+            <picture>
+                <source srcset="multimedia/IvanSosa-movil.png" media="(max-width: 768px)" width="100" height="153"/>
+                <source srcset="multimedia/IvanSosa-tablet.png" media="(max-width: 1024px)" width="150" height="227"/>
+                <img src="multimedia/IvanSosa.png" width="300" height="455" alt="Ivan Sosa"/>
+            </picture>
+        </section>
+
+        <section>
+            <h3>Datos equipos</h3>
+            <ol>
+                <li>Kern Pharma</li>
+                <li>Movistar Team</li>
+                <li>INEOS Grenadiers</li>
+                <li>Team INEOS</li>
+                <li>Team Sky</li>
+                <li>Androni Giocattoli - Sidermec</li>
+                <li>Androni - Sidermec - Bottecchia</li>
+            </ol>
+        </section>
+
+      <section>
+            <h3>Temporada 2025</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th id="th-dato" scope="col">Dato</th>
+                        <th id="th-resultado" scope="col">Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td headers="th-dato">Días de competición</td>
+                        <td headers="th-resultado">42</td>
+                    </tr>
+                    <tr>
+                        <td headers="th-dato">Carreras disputadas</td>
+                        <td headers="th-resultado">9</td>
+                    </tr>
+                    <tr>
+                        <td headers="th-dato">Victorias</td>
+                        <td headers="th-resultado">0</td>
+                    </tr>
+                    <tr>
+                        <td headers="th-dato">Podios</td>
+                        <td headers="th-resultado">1</td>
+                    </tr>
+                    <tr>
+                        <td headers="th-dato">Top 10</td>
+                        <td headers="th-resultado">2</td>
+                    </tr>
+                    <tr>
+                        <td headers="th-dato">Puntos UCI</td>
+                        <td headers="th-resultado">110</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Multimedia</h3>
+            <p>Equipo <a href="https://www.lavuelta.es/es/equipo/EKP/equipo-kern-pharma">Kern Pharma</a> en la Vuelta
+                Ciclista a España 2026.</p>
+
+            <video controls poster="multimedia/Alienacion_corredores.png">
+                <source src="multimedia/Video_presentacion_equipo.mp4" type="video/mp4"/>
+                <source src="multimedia/Video_presentacion_equipo.webm" type="video/webm"/>
+            </video>
+
+            <audio controls>
+                <source src="multimedia/Audio_Equipo.mp3" type="audio/mpeg"/>
+                <source src="multimedia/Audio_Equipo.wav" type="audio/wav"/>
+            </audio>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Paula Peña Arcos</p>
+        <address>
+            <a href="mailto:UO306725@unoivi.es">UO306725@uniovi.es</a>
+        </address>
+    </footer>
+
+</body>
+
+</html>
