@@ -1,0 +1,140 @@
+/* **************************************************/
+/*                      LaVuelta2026                */
+/*                   Estilos generales              */
+/* **************************************************/
+/*             DATOS ESTUDIANTE                     */
+/* -------------------------------------------------*/
+/*  Nombre y Apellidos: Paula Peña Arcos            */
+/*  Correo electrónico (uniovi): UO306725@uniovi.es */
+/*  Grupo de laboratorio: L9                        */
+/* **************************************************/
+
+
+/* Especificidad 002 */
+section:has(picture) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Especificidad: 003 */
+section:has(picture)>h3 {
+    flex-basis: 100%;
+}
+
+/* Especificidad: 003 */
+section:has(picture)>ul {
+    order: 2;
+    list-style: none;
+}
+
+/* Especificidad: 003 */
+section:has(picture)>picture {
+    order: 1;
+}
+
+/* Equipo*/
+/* Especificidad: 002 */
+main section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+}
+
+/* Especificidad: 003 */
+main section h3 {
+    grid-column: 1 / -1;
+}
+
+/* Especificidad 001 */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+        "cabecera"
+        "migas"
+        "contenido"
+        "pie";
+}
+
+/*Especificidad: 001*/
+header {
+    grid-area: cabecera;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+}
+
+/*Especificidad: 002*/
+header+nav {
+    grid-area: migas;
+}
+
+/*Especificidad: 001*/
+main {
+    grid-area: contenido;
+}
+
+/*Especificidad: 001*/
+footer {
+    grid-area: pie;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    gap: 0.5em;
+}
+
+
+/* Media query para tablets */
+@media screen and (max-width: 1024px) {
+
+    /*Especificidad: 002*/
+    header+nav {
+        display: none;
+    }
+
+    /*Especificidad: 001*/
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    /*Especificidad: 002*/
+    header nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /*Especificidad: 002*/
+    main section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media query para moviles */
+@media screen and (max-width: 768px) {
+
+    /*Especificidad: 002*/
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    /*Especificidad: 002*/
+    main section {
+        grid-template-columns: 1fr;
+    }
+}
